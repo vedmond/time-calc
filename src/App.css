@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.timeCalculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  background-color: rgb(215, 237, 193);
+  margin: 1px;
+  width: 300px;
+  height: 500px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+input {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  padding-left: 10px;
+  border: 2px solid rgb(49, 89, 51);
+}
+.timeButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 23px;
+}
+button {
+  width: 92px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 29px;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: #090909;
+  color: aliceblue;
+}
+.footerBtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+#clearBtn {
+  width: 233px;
+  height: 50px;
+  font-size: 29px;
+  margin-top: 20px;
+}
+p {
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
