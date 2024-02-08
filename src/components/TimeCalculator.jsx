@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { addTime, subtractTime } from '../components/computation';
+import { FaArrowLeftLong } from 'react-icons/fa6';
 
 function TimeCalculator() {
   // Состояние для хранения времени 1, времени 2 и результата
@@ -115,7 +116,9 @@ function TimeCalculator() {
           <button id="clearBtn" onClick={clearAll}>
             Clear
           </button>
-          <button onClick={clearLast}>&#129044;</button>
+          <button onClick={clearLast}>
+            <FaArrowLeftLong className="arrow" />
+          </button>
         </div>
       </div>
     </div>

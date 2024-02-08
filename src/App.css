@@ -70,3 +70,6 @@ p {
   flex-direction: row;
   gap: 10px;
 }
+.arrow {
+  font-size: 20px;
+}
