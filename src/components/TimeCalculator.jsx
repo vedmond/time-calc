@@ -45,6 +45,20 @@ function TimeCalculator() {
     }
     setResult(finalResult);
   };
+  // Функция для очистки последнего значения
+  const clearLast = () => {
+    if (!result && operation && time2.length > 0) {
+      const str = time2.slice(0, -1);
+      setTime2(str);
+    }
+    if (!result && !operation && time1.length > 0) {
+      const str = time1.slice(0, -1);
+      setTime1(str);
+    }
+    if (!result && operation && !time2.length && time1.length > 0) {
+      setOperation('');
+    }
+  };
 
   // Функция для очистки всех значений
   const clearAll = () => {
@@ -97,9 +111,12 @@ function TimeCalculator() {
         <button onClick={() => handleOperation('+')}>+</button>
         <button onClick={() => handleOperation('-')}>-</button>
         <button onClick={calculateResult}>=</button>
-        <button id="clearBtn" onClick={clearAll}>
-          Clear
-        </button>
+        <div className="footerBtnClear">
+          <button id="clearBtn" onClick={clearAll}>
+            Clear
+          </button>
+          <button onClick={clearLast}>&#129044;</button>
+        </div>
       </div>
     </div>
   );
